@@ -167,7 +167,7 @@ hr {
 
 #banner-wrapper {
 	width:auto;
-	height:510px;
+	height: 600px;
 	background-image:url("images/banner_1.jpg");
 	background-repeat:repeat-x;
 }
@@ -472,19 +472,22 @@ hr {
 
 .choose_plan:nth-child(1) {
 	top: 100px;
-	left: 45px;
+    left: -256px;
+	display: none;
 	
 }
 
 .choose_plan:nth-child(2) {
-	top: 100px;
+	top: 500px;
 	left: 475px;
+	display: none;
 	
 }
 
 .choose_plan:nth-child(3) {
 	top: 100px;
-	left: 900px;
+	left: 1198px;
+	display: none;
 }
 
 .choose_plan_title {

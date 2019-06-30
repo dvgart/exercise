@@ -2,8 +2,8 @@ $(document).ready(function(){
 
     var main_offset = $('#pre-main-wrapper').offset().top/2 - 50;
     var sec_main_offset = $("#main-wrapper").offset().top/2 + 200;
-
-	$(window).on('scroll', function(){
+    var third_main_offset = $("#main2-container").offset().top/2 + 650;
+    	$(window).on('scroll', function(){
 		
         if($(window).scrollTop() > main_offset && $('.box_left').hasClass('hidden')){
         	 
@@ -99,6 +99,33 @@ $(document).ready(function(){
             
 
         }
+        console.log("container offset: "+third_main_offset);
+        console.log("window scroll: " + $(window).scrollTop());
+        if($(window).scrollTop() > third_main_offset && $('.choose_plan').hasClass('hidden')){
+            $('.choose_plan').removeClass('hidden');
+
+            $('.choose_plan:nth-child(1)').show();
+            $('.choose_plan:nth-child(2)').show();
+            $('.choose_plan:nth-child(3)').show();
+
+            $('.choose_plan:nth-child(1)').animate({
+                left: '45px',
+                
+            },800);
+
+            $('.choose_plan:nth-child(2)').animate({
+                top: '100px',
+                
+            },800);
+
+            $('.choose_plan:nth-child(3)').animate({
+                left: '900px',
+                
+            },800);
+                        
+
+        }
+
 	});
 
 
